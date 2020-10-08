@@ -17,9 +17,102 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
+  display: flex;
+  flex-direction: column;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #e0bb84;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  padding-top: 4em;
+}
+
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+  flex: 1;
+  display: flex;
+  background-color: #f4f1ec;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+#tweets-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  /* border: 3px solid gray; */
+  font-size: medium;
+  margin: 1em;
+  width: 98%;
+  padding: 0.5em;
+  
+}
+
+.whole-tweet {
+  border: 3px solid gray;
+  margin-bottom: 0.5em;
+}
+
+.whole-tweet:hover {
+  box-shadow: 3px 3px 5px gray;
+}
+
+section header {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  /* border: 5px solid blue; */
+  padding-bottom: 1em;
+  margin: 0.5em;
+}
+
+.username {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
+  flex: 1;
+  display: flex;
+  /* border: 5px solid green; */
+  border-top: 3px solid gray;
+  font-size: x-small;
+  margin: 0.5em;
+  padding: 1em;
+}
+
+.content {
+  margin: 0.5em;
+}
+
+.icons {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer i {
+  padding-right: 0.5em;
+}
+
+.whole-tweet {
+  width: 100%;
+}
+
+.error-message {
+  display: none;
+  text-align: center;
+  color: red;
+  border: 3px solid red;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    flex-direction: row;
+  }
+}
