@@ -1,0 +1,53 @@
+nav {
+  flex: 1;
+  display: flex;
+  height: 4em;
+  background-color: #4056A1;
+  color: #ffffff;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+span.title {
+  flex: 1;
+  display: flex;
+  font-family: 'Bungee', cursive;
+  margin: 1.5em;
+  align-items: flex-end;
+}
+
+.rightSide {
+  flex: 1;
+  display: flex;
+  margin: 1.5em;
+  margin-bottom: 0.2em;
+  flex-direction: column;
+  font-size: medium;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+nav i {
+  margin-right: 3em;
+  margin-top: 0.5em;
+  animation-name: point;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.down-chevron {
+  height: 2em;
+}
+
+@keyframes point{
+  from {
+    margin-top: 0.5em;
+  }
+
+  to {
+    margin-top: 1em;
+  }
+}
