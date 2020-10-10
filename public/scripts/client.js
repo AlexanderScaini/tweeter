@@ -60,7 +60,7 @@ $(document).ready(function() {
 
     const data = $form.serialize();
     const tweetLength = data.slice(5).length;
-
+    console.log(tweetLength)
     // throws an error if the user inputs more than 140 characters or nothing at all
     if (tweetLength > 140) {
       $(".error-message").slideDown();
