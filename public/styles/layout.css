@@ -88,6 +88,7 @@ footer {
 
 .content {
   margin: 0.5em;
+  word-break: break-word;
 }
 
 .icons {
